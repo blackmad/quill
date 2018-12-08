@@ -7,4 +7,4 @@ private[getquill] trait CoreDsl
   with QuotationDsl
   with EncodingDsl
   with MetaDsl
-//  with DynamicQueryDsl
+  with DynamicQueryDsl

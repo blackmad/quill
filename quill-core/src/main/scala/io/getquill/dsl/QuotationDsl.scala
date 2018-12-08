@@ -10,10 +10,10 @@ import io.getquill.quotation.Quotation
 import scala.annotation.compileTimeOnly
 
 private[dsl] trait QuotationDsl {
+  this: CoreDsl =>
 
   trait Quoted[+T] {
     def ast: Ast
-    def dynamic: Quoted[T] = this
     override def toString = ast.toString
   }
 
